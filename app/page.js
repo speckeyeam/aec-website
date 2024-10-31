@@ -46,7 +46,8 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="mx-auto pb-32 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mt-32 mb-[10rem]" data-aos="fade-up">
+        <section className="h-screen w-screen">
+        <div className="text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full" data-aos="fade-up">
           <div className="inline-block border-2 border-gray-300 bg-gray-200 rounded-full px-4 py-1 mb-8">
             <span className="text-sm text-gray-500 opacity-75">NPO in progress</span>
           </div>
@@ -68,9 +69,11 @@ export default function Home() {
             </a>
           </div>
           
-          <div className="flex justify-center mt-28">
+          
+        </div>
+        <div className="flex absolute justify-center left-[50%] translate-x-[-50%] bottom-20">
             <svg
-              className="animate-bounce mt-16 w-8 h-8 text-gray-600"
+              className="animate-bounce w-8 h-8 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -84,7 +87,8 @@ export default function Home() {
               />
             </svg>
           </div>
-        </div>
+        </section>
+        
 
         {/* About Organization Section */}
         <section className="mt-20 text-center" data-aos="fade-up">
