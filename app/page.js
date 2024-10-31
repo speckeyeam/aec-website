@@ -62,8 +62,8 @@ export default function Home() {
             Transforming traditional science education through project-based, hands-on experiences led by:
             <p className="text-gray-900 mt-4 font-medium">Drafting, Manufacturing, and Flying.</p>
           </p>
-          <div className="mt-8 flex justify-center items-center gap-3">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKevHXeLEEgLSqH3s983XU7aFKkhjIy4NOLLqyEAhcJooHqw/viewform" target="blank" className="bg-gradient-to-r bg-opacity-0 from-MID_BLUE to-DARK_BLUE px-8 py-4 rounded-xl font-medium hover:opacity-90 text-lg transition-all">
+          <div className="mt-8 text-white flex justify-center items-center gap-3">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKevHXeLEEgLSqH3s983XU7aFKkhjIy4NOLLqyEAhcJooHqw/viewform" target="blank" className="bg-gradient-to-r bg-opacity-0 from-MID_BLUE to-DARK_BLUE px-8 py-4 rounded-xl font-medium text-white hover:opacity-90 text-lg transition-all">
               Join Waitlist
             </a>
           </div>
