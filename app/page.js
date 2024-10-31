@@ -1,7 +1,10 @@
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
   return (
+
+    
     <div className="min-h-screen bg-[#f8ede2]">
       {/* Navbar */}
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
@@ -60,10 +63,11 @@ export default function Home() {
             <p className="text-gray-900 mt-4 font-medium">Drafting, Manufacturing, and Flying.</p>
           </p>
           <div className="mt-8 flex justify-center items-center gap-3">
-            <button className="bg-gradient-to-r bg-opacity-0 from-MID_BLUE to-DARK_BLUE px-8 py-4 rounded-xl font-medium hover:opacity-90 text-lg transition-all">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKevHXeLEEgLSqH3s983XU7aFKkhjIy4NOLLqyEAhcJooHqw/viewform" target="blank" className="bg-gradient-to-r bg-opacity-0 from-MID_BLUE to-DARK_BLUE px-8 py-4 rounded-xl font-medium hover:opacity-90 text-lg transition-all">
               Join Waitlist
-            </button>
+            </a>
           </div>
+          
           <div className="flex justify-center mt-28">
             <svg
               className="animate-bounce mt-16 w-8 h-8 text-gray-600"
@@ -91,45 +95,47 @@ export default function Home() {
         </section>
 
         {/* Design, Engineer, Fly Section */}
-        <section className="mt-20 text-center" data-aos="fade-up">
-          <div className="flex justify-center space-x-16">
+        <section className="mt-20 flex justify-center items-center text-center" data-aos="fade-up">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-16">
             {/* Design Box */}
-            <div className="w-60 h-60 flex-col gap-6 bg-[#fdfaf7] text-black rounded-2xl drop-shadow-2xl flex items-center justify-center">
-            <Image
-              src="/penicon.svg"
-              alt="AeroEdu Logo"
-              width={50}
-              height={50}
-              className="object-contain fw-bold"
-            />
+            <div className="w-60 h-60 flex flex-col gap-6 bg-[#fdfaf7] text-black rounded-2xl hover:drop-shadow-2xl transition-all duration-400 ease-in-out items-center justify-center">
+              <Image
+                src="/penicon.svg"
+                alt="AeroEdu Logo"
+                width={50}
+                height={50}
+                className="object-contain fw-bold"
+              />
               <p className="text-lg font-bold">Design</p>
             </div>
 
             {/* Engineer Box */}
-            <div className="w-60 h-60 flex-col gap-6 bg-[#fdfaf7] text-black rounded-2xl drop-shadow-2xl flex items-center justify-center">
-            <Image
-              src="/wrenchicon.svg"
-              alt="AeroEdu Logo"
-              width={50}
-              height={50}
-              className="object-contain"
-            />
+            <div className="w-60 h-60 flex flex-col gap-6 bg-[#fdfaf7] text-black rounded-2xl  hover:drop-shadow-2xl transition-all duration-400 ease-in-out items-center justify-center">
+              <Image
+                src="/wrenchicon.svg"
+                alt="AeroEdu Logo"
+                width={50}
+                height={50}
+                className="object-contain"
+              />
               <p className="text-lg font-bold">Engineer</p>
             </div>
 
             {/* Fly Box */}
-            <div className="w-60 h-60 flex-col gap-6 bg-[#fdfaf7] text-black rounded-2xl drop-shadow-2xl flex items-center justify-center">
-            <Image
-              src="/planeicon.svg"
-              alt="AeroEdu Logo"
-              width={50}
-              height={50}
-              className="object-contain"
-            />
+            <div className="w-60 h-60 flex flex-col gap-6 bg-[#fdfaf7] text-black rounded-2xl  hover:drop-shadow-2xl transition-all duration-400 ease-in-out items-center justify-center">
+              <Image
+                src="/planeicon.svg"
+                alt="AeroEdu Logo"
+                width={50}
+                height={50}
+                className="object-contain"
+              />
               <p className="text-lg font-bold">Fly</p>
             </div>
           </div>
         </section>
+
+
 
 
         
@@ -149,7 +155,7 @@ export default function Home() {
             </div>
             <div className="lg:w-1/2">
               <Image
-                src="/planebackground.jpg"
+                src="/backgroundimage.jpg"
                 width={800}
                 height={800}
                 className="w-full rounded-xl object-cover"
